@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Log In Client</title>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/295/295128.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    
+    
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-wrapper">
+
+            <h3 class="login-text"><i class="bi bi-person-circle ac-logo"></i>Log In</h3>
+
+            <form method="POST" action="" id="myfrm">
+                <div class="item"><input class="input" name="name" id="name" type="text" placeholder="name"></div>
+                <div class="item"><input class="input" name="mobile no." id="mobile no." type="text" placeholder="mobile no."></div>
+                <div class="item"><input class="input" name="lisence" id="lisence" type="text" placeholder="lisence"></div>
+                <div class="item"><input class="input" name="password" id="password" type="password" placeholder="password"> </div>
+          
+                <!-- <input type="checkbox" name="remember" id="remember"><span id="toc"> I Accept Terms and Condition</span> -->
+                <div class="item submit"><button type="submit" onclick="myPrint('myfrm')"><b>Submit</b></button></div>
+            </form>
+
+      
+                <h2><span>OR</span></h2>
+         
+            <div class="social-media">
+
+               <a href="#"><div class="icons8-google social-mediaImg"></div></a> 
+               <a href="#"><div class="icons8-facebook-circled social-mediaImg"></div></a> 
+               <a href="#"><div class="icons8-twitter social-mediaImg"></div></a> 
+  
+            </div>
+
+            <span class="ac">Don't have an Account?  <a href="sign_in_client.html">Sign In</a></span>
+        </div>
+
+    </div>
+    <script>
+        function myPrint(myfrm) {
+           
+            window.alert(document.getElementById("name").value+document.getElementById("mobile no.").value+document.getElementById("lisence").value+document.getElementById("password").value);
+
+
+        }
+    </script>
+</body>
+
+</html>
