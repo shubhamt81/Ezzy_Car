@@ -11,10 +11,11 @@ app.config["SESSION_PERMANENT"] = False
 app.config["SESSION_TYPE"] = "filesystem"
 Session(app)
 
-app.config['MYSQL_HOST']='localhost'
-app.config['MYSQL_USER']='root'
-app.config['MYSQL_PASSWORD']='shubham@24'
-app.config['MYSQL_DB']='ezzycar'
+app.config['MYSQL_HOST']='bjb8svdmd7sj7ta1dbng-mysql.services.clever-cloud.com'
+app.config['MYSQL_USER']='u3aeixuubn1povrx'
+app.config['MYSQL_PASSWORD']='XKlynAYY3Zu46pfvgOQt'
+app.config['MYSQL_DB']='bjb8svdmd7sj7ta1dbng'
+
 mysql=MySQL(app)
 
 
