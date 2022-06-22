@@ -36,7 +36,7 @@ def login_client():
         
         cur=mysql.connection.cursor()
         
-        s="select mobile,name,password,registration_no from client where mobile="+'"'+mobileno+'" '+" and name="+'"'+name+'"'+"and password="+'"'+password+'"'+";"
+        s="select mobile,name,password,registration_no from CLIENT where mobile="+'"'+mobileno+'" '+" and name="+'"'+name+'"'+"and password="+'"'+password+'"'+";"
         # print(s)
         cur.execute(s)
         row=cur.fetchone()
