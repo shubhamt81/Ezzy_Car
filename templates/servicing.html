@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicing</title>
+    <link rel="stylesheet" href="../static/CSS/style4.css">
+    <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+
+    <table>
+      <caption>Servicing schemes</caption>
+      <thead>
+        <tr>
+          <th scope="col">Company Name</th>
+          <th scope="col">Delearship Name</th>
+          <th scope="col">Plan</th>
+          <th scope="col">Price</th>
+          <th scope="col">City</th>
+          <th scope="col">Plan</th>
+        </tr>
+      </thead>
+      <tfoot>
+        <tr>
+          <td colspan="3">Data is updated every 15 minutes.</td>
+        </tr>
+      </tfoot>
+      {% for datas in data %}
+        <tr>
+          <td>{{ datas[0] }}</td>
+          <td>{{ datas[1] }}</td>
+          <td>{{ datas[2] }}</td>
+          <td>{{ datas[3] }}</td>
+          <td>{{ datas[4] }}</td>
+          <td>{{ datas[5] }}</td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+    
+  </body>
+</html>
