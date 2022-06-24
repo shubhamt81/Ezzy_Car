@@ -169,8 +169,9 @@ def servicing():
     cur=mysql.connection.cursor()
     nq=session.get("nme",None)
     lq=session.get("lsence", None)
-    
+    app.logger.info('testing info log')
     s="select * from cars where name="+'"'+nq+'" '+" and registration_no="+'"'+lq+'"'+";"
+    # app.logger.info('testing info log')
     # print(s)
     cur.execute(s)
     rz=cur.fetchone()
