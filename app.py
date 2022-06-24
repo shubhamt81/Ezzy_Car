@@ -179,7 +179,8 @@ def servicing():
     if(rz==None):
         return "NO INSURANCE AVAILABLE"
     print(rz,rz[-1])
-    r="select * from servicing where city="+'"'+rz[5]+'"'+"and car_company="+'"'+rz[3]+'"' +';'
+    r="select * from servicing" +';'
+    # +'"'+rz[5]+'"'+"and car_company="+'"'+rz[3]+'"'
     curr=mysql.connection.cursor()
     curr.execute(r)
     row=curr.fetchall()
