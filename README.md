@@ -7,5 +7,7 @@ services specific to your car and residence. It makes facile to compare and choo
     On the other hand, dealerships can post their insurance and maintenance services, which will help them reach out to more 
 customers in a more effective way.
 <br><br>
+Techonlogies used- Flask, MySQL, Heroku, HTML, CSS<br>
+<br><br>
 Link to the website -> https://ezzycar.herokuapp.com/
    
