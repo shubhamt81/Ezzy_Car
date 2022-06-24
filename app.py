@@ -169,8 +169,8 @@ def servicing():
     cur=mysql.connection.cursor()
     nq=session.get("nme",None)
     lq=session.get("lsence", None)
-    app.logger.info('testing info log')
-    s="select * from cars where name="+'"'+nq+'" '+" and registration_no="+'"'+lq+'"'+";"
+    # app.logger.info('testing info log')
+    s="select * from cars where name="+'"'+nq+'" '+" and registartion_no="+'"'+lq+'"'+";"
     # app.logger.info('testing info log')
     # print(s)
     cur.execute(s)
@@ -179,8 +179,7 @@ def servicing():
     if(rz==None):
         return "NO INSURANCE AVAILABLE"
     print(rz,rz[-1])
-    r="select * from servicing" +';'
-    # +'"'+rz[5]+'"'+"and car_company="+'"'+rz[3]+'"'
+    r="select * from servicing where city="+'"'+rz[5]+'"'+"and car_company="+'"'+rz[3]+'"' +';'
     curr=mysql.connection.cursor()
     curr.execute(r)
     row=curr.fetchall()
