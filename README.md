@@ -6,3 +6,6 @@ service. EzzyCar is a one-stop solution for all of your car-related problems.<br
 services specific to your car and residence. It makes facile to compare and choose the right option for you.<br>
     On the other hand, dealerships can post their insurance and maintenance services, which will help them reach out to more 
 customers in a more effective way.
+<br><br>
+Link to the website -> https://ezzycar.herokuapp.com/
+   
