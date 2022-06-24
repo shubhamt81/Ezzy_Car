@@ -31,14 +31,14 @@
                 <div class="item"><input class="input" type="text" name="insurance_plan" placeholder="Insurance Plan" required></div>
                 <div class="item"><input class="input" type="text" name="insurance_id" placeholder="Insurance ID"required></div>
                 <div class="item"><input class="input" type="number" name="insurance_price" placeholder="Insurance Price" required></div>
-                <div class="item"><input class="input" type="date" name="insurance_date" placeholder="Insurance date" required> </div>
+                <div class="item"><input class="input" type="text" onfocus="(this.type = 'date')" onblur="if(!this.value) this.type='text'" name="insurance_date" placeholder="Insurance date" required> </div>
                 
                 <!--maintenance_plan,maintenance_price,maintenance_company,maintenance_date,maintenance_due,maintenance_id-->
                 <div class="item"><input class="input" type="text" name="maintenance_plan" placeholder="Maintenance Plan" required> </div>
                 <div class="item"><input class="input" type="text" name="maintenance_price" placeholder="Maintenance Price" required></div>
                 <div class="item"><input class="input" type="text" name="maintenance_company" placeholder="Maintenance Company" required></div>
-                <div class="item"><input class="input" type="date" name="maintenance_date" placeholder="Maintenance Date" required></div>
-                <div class="item"><input class="input" type="date" name="maintenance_due" placeholder="Maintenance due" required> </div>
+                <div class="item"><input class="input" type="text" onfocus="(this.type = 'date')" onblur="if(!this.value) this.type='text'" id="date" name="maintenance_date" placeholder="Maintenance Date"  required></div>
+                <div class="item"><input class="input" type="text" onfocus="(this.type = 'date')" onblur="if(!this.value) this.type='text'" name="maintenance_due" placeholder="Maintenance due" required> </div>
                 <div class="item"><input class="input" type="text" name="maintenance_id" placeholder="Maintenance ID" required> </div>
                 
                 <!--puc,license,chasis_no,rc_no,license_expiry,puc_expiry,rc_expiry-->
@@ -46,9 +46,9 @@
                 <div class="item"><input class="input" type="text" name="license" placeholder="License" required></div>
                 <div class="item"><input class="input" type="text" name="chasis_no" placeholder="Chasis No."required></div>
                 <div class="item"><input class="input" type="text" name="rc_no" placeholder="RC no." required></div>
-                <div class="item"><input class="input" type="date" name="license_expiry" placeholder="License Expiry" required> </div>
-                <div class="item"><input class="input" type="date" name="puc_expiry" placeholder="PUC Expiry" required> </div>
-                <div class="item"><input class="input" type="date" name="rc_expiry" placeholder="RC Expiry" required> </div>
+                <div class="item"><input class="input" type="text" onfocus="(this.type = 'date')" onblur="if(!this.value) this.type='text'" name="license_expiry" placeholder="License Expiry" required> </div>
+                <div class="item"><input class="input" type="text" onfocus="(this.type = 'date')" onblur="if(!this.value) this.type='text'" name="puc_expiry" placeholder="PUC Expiry" required> </div>
+                <div class="item"><input class="input" type="text" onfocus="(this.type = 'date')" onblur="if(!this.value) this.type='text'" name="rc_expiry" placeholder="RC Expiry" required> </div>
                 
                 <div class="item submit"><button type="submit"><b>Submit</b></button></div>
             </form>

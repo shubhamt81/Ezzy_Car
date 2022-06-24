@@ -144,7 +144,7 @@ def insurance():
     nq=session.get("nme",None)
     lq=session.get("lsence", None)
     
-    s="select * from cars where name="+'"'+nq+'" '+" and registration_no="+'"'+lq+'"'+";"
+    s="select * from cars where name="+'"'+nq+'" '+" and registartion_no="+'"'+lq+'"'+";"
     # print(s)
     cur.execute(s)
     rz=cur.fetchone()

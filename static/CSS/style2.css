@@ -29,6 +29,7 @@ html {
 }
 
 .item {
+    text-align: right;
     padding: 0.2em;
 }
 
@@ -61,6 +62,7 @@ button {
 
 
 form {
+    /* text-align: justify; */
     margin: 2em auto 2em auto
 }
 
