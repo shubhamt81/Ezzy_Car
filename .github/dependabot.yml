@@ -4,13 +4,8 @@
 # https://docs.github.com/github/administering-a-repository/configuration-options-for-dependency-updates
 
 version: 2
-registries:
-  ezzycar-github:
-    type: pip
-    url: https://github.com/shubhamt81/Ezzy_Car/blob/master/requirements.txt
-    token: ${{secrets.MY_GITHUB_PERSONAL_TOKEN}}
 updates:
   - package-ecosystem: "" # See documentation for possible values
     directory: "/" # Location of package manifests
     schedule:
-      interval: "daily"
+      interval: "weekly"
