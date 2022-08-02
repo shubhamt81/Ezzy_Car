@@ -37,6 +37,30 @@ MySQL operates along with several utility programs which support the administrat
 
 MySQL was originally developed to handle large databases quickly. Although MySQL is typically installed on only one machine, it is able to send the database to multiple locations, as users are able to access it via different MySQL client interfaces. These interfaces send SQL statements to the server and then display the results.
 <br><br>
+<h3>Flask</h3>
+<h5>What is Flask?</h5>
+Flask is an API of Python that allows us to build up web-applications. It was developed by Armin Ronacher. Flask’s framework is more explicit than Django’s framework and is also easier to learn because it has less base code to implement a simple web-Application. A Web-Application Framework or Web Framework is the collection of modules and libraries that helps the developer to write applications without writing the low-level codes such as protocols, thread management, etc. Flask is based on WSGI(Web Server Gateway Interface) toolkit and Jinja2 template engine.
+<br>
+The Flask application is started by calling the run() function. The method should be restarted manually for any change in the code. To overcome this, the debug support is enabled so as to track any error.
+<h5>Routing</h5>
+Nowadays, the web frameworks provide routing technique so that user can remember the URLs. It is useful to access the web page directly without navigating from the Home page. It is done through the following route() decorator, to bind the URL to a function.
+<br>
+Flask support various HTTP protocols for data retrieval from the specified URL, these can be defined as:-
+<br>
+Method      Description<br>
+GET	      This is used to send the data in an without encryption of the form to the server.<br>
+HEAD	      provides response body to the form<br>
+POST	      Sends the form data to server. Data received by POST method is not cached by server.<br>
+PUT	      Replaces current representation of target resource with URL.<br>
+DELETE	   Deletes the target resource of a given URL<br>
+<h5>Session</h5>
+In Session, the data is stored on Server. It can be defined as a time interval in which the client logs into a server until the user logs out. The data in between them are held in a temporary folder on the Server. Each user is assigned with a specific Session ID. The Session object is a dictionary that contains the key-value pair of the variables associated with the session. A SECRET_KEY is used to store the encrypted data on the cookie.
+<h5>File-uploading</h5>
+File Uploading in Flask is very easy. It needs an HTML form with enctype attribute and URL handler, that fetches file and saves the object to the desired location. Files are temporary stored on server and then on the desired location.
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2b0LgVsjZr-uVvpglqEjNEg7-4tdqpsKR-g5ZF2NRMYt5oTy1pBT0MI6NeBE2pMme8CQ&usqp=CAU" style="text-align:center;">
+
+
+<br><br>
 <h3>Heroku</h3>
 Heroku is a cloud-based platform. It offers a Platform as a service (PaaS) product. Heroku is based on AWS and its services are simpler to use than Elastic Compute Cloud. It supports efficient building, deploying, and fast scaling. It is popular for its add-on capabilities as it supports many alerts and management tools. The services which are popular for Heroku are it helps you to create run-time applications without taking care of its infrastructure which is internally managed by the tool itself. Following are some reasons for using Heroku :
 <br>It gives a scalable platform to deploy products over the cloud without taking care of infrastructure.
